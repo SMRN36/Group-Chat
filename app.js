@@ -11,18 +11,16 @@ app.use(cors());
 const dotenv = require("dotenv");
 dotenv.config();
 
-const sequelize = require("./util/database");
+const sequelize = require("./Utils/database");
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-//Router
-const userRouter = require("./router/userRouter");
-//Models
+const userRouter = require("./Routes/userRoutes");
 
-//Middleware
 app.use("/", userRouter);
+app.use("/user", userRouter);
 
 sequelize
   .sync()
