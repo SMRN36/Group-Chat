@@ -4,6 +4,8 @@ const jwt = require("jsonwebtoken");
 const sequelize = require("../Utils/database");
 const Sib = require("sib-api-v3-sdk");
 const { Op } = require("sequelize");
+const User = require("../Models/userModel");
+
 
 function generateAccessToken(id, email) {
     return jwt.sign({ userId: id, email: email }, process.env.TOKEN);
