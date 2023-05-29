@@ -3,6 +3,7 @@ const addToGroupBtn = document.getElementById("addToGroup");
 const groups = document.getElementById("groups");
 const deleteFromGroupBtn = document.getElementById("deleteFromGroup");
 const logoutBtn = document.getElementById("logout");
+const groupMembersBtn = document.getElementById("groupMembers");
 
 async function createGroup() {
   try {
@@ -11,7 +12,7 @@ async function createGroup() {
     let userInput;
     while (userInput !== "done") {
       userInput = prompt(
-        `Enter the email Id of Users to Add! Please Enter Valid Email Id Otherwise User will not get Added. Type "done" when you finished!`
+        `Enter the email Id of Users to Add! Type "done" when you finished!`
       );
       if (userInput !== "done") {
         members.push(userInput);
@@ -72,7 +73,7 @@ async function addToGroup() {
     let userInput;
     while (userInput !== "done") {
       userInput = prompt(
-        `Enter the email Id of Users to Add! Please Enter Valid Email Id Otherwise User will not get Added. Type "done" when you finished!`
+        `Enter the email Id of Users to Add! Type "done" when you finished!`
       );
       if (userInput !== "done") {
         members.push(userInput);
@@ -104,7 +105,7 @@ async function deleteFromGroup() {
       let userInput;
       while (userInput !== "done") {
         userInput = prompt(
-          `Enter the email Id of Users to Add! Please Enter Valid Email Id Otherwise User will not get Added. Type "done" when you finished!`
+          `Enter the email Id of Users to Add! Type "done" when you finished!`
         );
         if (userInput !== "done") {
           members.push(userInput);
@@ -152,7 +153,7 @@ async function deleteFromGroup() {
           "d-flex",
           "justify-content-center",
           "groupMembersDiv",
-          "text-white"
+          "text-black"
         );
         const p = document.createElement("p");
         p.appendChild(document.createTextNode(`${user.name} is Member`));
@@ -166,7 +167,7 @@ async function deleteFromGroup() {
   
   function logout() {
     localStorage.clear();
-    window.location.href = "http://localhost:4000/user/";
+    window.location.href = "http://localhost:4000";
   }
 
 groupMembersBtn.addEventListener("click", groupMembers);

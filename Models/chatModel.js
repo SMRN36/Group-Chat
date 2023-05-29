@@ -1,5 +1,6 @@
 const sequelize = require("../Utils/database");
 const Sequelize = require("sequelize");
+const Group = require("../Models/groupModel");
 
 const Chat = sequelize.define("chats", {
   id: {
@@ -13,6 +14,14 @@ const Chat = sequelize.define("chats", {
   },
   message: {
     type: Sequelize.STRING,
+  },
+  groupId: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    references: {
+      model: Group,
+      key: "id",
+    },
   },
 });
 
