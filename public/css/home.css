@@ -2,9 +2,9 @@ body,
 html {
   height: 100%;
   margin: 0;
-  background: #f4eeff;
-  background: -webkit-linear-gradient(to right, #dcd6f7, #95a1d5);
-  background: linear-gradient(to right, #dcd6f7, #95a1d6);
+  /*background: yellowgreen;*/
+  background: -webkit-linear-gradient(to right, #dcd6f7, whitesmoke);
+  background: linear-gradient(to right, white, whitesmoke);
 }
 
 .chat {
@@ -14,7 +14,7 @@ html {
 .card {
     height: 90vh;
   border-radius: 15px !important;
-  background-color: #424874 !important;
+  background-color: whitesmoke !important;
 }
 
 .contacts_body {
@@ -42,18 +42,18 @@ html {
   }
   .search {
     border-radius: 15px 0 0 15px !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: white !important;
     border: 0 !important;
-    color: white !important;
+    color: black !important;
   }
   .search:focus {
     box-shadow: none !important;
     outline: 0px !important;
   }
   .type_msg {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: white !important;
     border: 0 !important;
-    color: white !important;
+    color: black !important;
     height: 60px !important;
     overflow-y: auto;
   }
@@ -63,26 +63,26 @@ html {
   }
   .attach_btn {
     border-radius: 15px 0 0 15px !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: whitesmoke !important;
     border: 0 !important;
-    color: white !important;
+    color: black !important;
     cursor: pointer;
   }
   
 
   .send_btn {
     border-radius: 0 15px 15px 0 !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color:whitesmoke !important;
     border: 0 !important;
-    color: white !important;
+    color: black !important;
     cursor: pointer;
   }
 
   .search_btn {
     border-radius: 0 15px 15px 0 !important;
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: whitesmoke !important;
     border: 0 !important;
-    color: white !important;
+    color: black !important;
     cursor: pointer;
   }
 
@@ -98,19 +98,19 @@ html {
   }
   
   .active {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: white;
   }
   
   .user_img {
     height: 70px;
     width: 70px;
-    border: 1.5px solid #f5f6fa;
+    border: 1.5px solid black;
   }
 
   .user_img_msg {
     height: 40px;
     width: 40px;
-    border: 1.5px solid #f5f6fa;
+    border: 1.5px solid black;
   }
 
   .img_cont {
@@ -147,12 +147,12 @@ html {
 
   .user_info span {
     font-size: 20px;
-    color: white;
+    color: black;
   }
 
   .user_info p {
     font-size: 10px;
-    color: rgba(255, 255, 255, 0.6);
+    color: black
   }
 
   .video_cam {
@@ -171,7 +171,7 @@ html {
     margin-bottom: auto;
     margin-left: 10px;
     border-radius: 25px;
-    background-color: #95a1d5;
+    background-color: black;
     padding: 10px;
     position: relative;
   }
@@ -181,7 +181,7 @@ html {
     margin-bottom: auto;
     margin-right: 10px;
     border-radius: 25px;
-    background-color: #dcd6f7;
+    background-color: black;
     padding: 10px;
     position: relative;
   }
