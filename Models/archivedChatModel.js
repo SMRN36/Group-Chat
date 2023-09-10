@@ -1,4 +1,4 @@
-const sequelize = require("../util/database");
+const sequelize = require("../Utils/database.js");
 const Sequelize = require("sequelize");
 
 const ArchivedChat = sequelize.define("archivedChats", {

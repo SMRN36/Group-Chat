@@ -65,7 +65,7 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
+	background-color: black;
 	border-color: #FFFFFF;
 }
 
@@ -159,13 +159,14 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #1C1C1C, #4A4A4A);
-	background: linear-gradient(to right, #1C1C1C, #4A4A4A);
+	/*background: #FF416C;*/
+	background: whitesmoke;
+	background: -webkit-linear-gradient(to right,whitesmoke);
+	background: linear-gradient(to right, whitesmoke);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
-	color: #FFFFFF;
+	color: black;
 	position: relative;
 	left: -100%;
 	height: 100%;

@@ -180,8 +180,13 @@
         $(".action_menu").toggle();
       });
     });
+    // Add a click event listener to the list items to close the menu
+  $(".action_menu ul li").click(function () {
+    $(".action_menu").hide();
+  });
   </script>
     <script src="http://localhost:5000/socket.io/socket.io.js"></script>
     <script src="/js/group.js"></script>
     <script src="/js/chat.js"></script>
+    
 </html>

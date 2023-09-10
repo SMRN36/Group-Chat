@@ -50,11 +50,11 @@ app.use("/group", groupRouter);
 
 
 
-const job = require("./jobs/cron");
-job.start();
+// const job = require("./jobs/cron");
+// job.start();
 
 sequelize
-  .sync({ force: true })
+  .sync()
   .then((result) => {
     app.listen(process.env.PORT || 3000);
   })
