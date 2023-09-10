@@ -4,7 +4,7 @@ const chatBoxBody = document.getElementById("chatBoxBody");
 const uiGroup = document.getElementById("groups");
 const groupNameHeading = document.getElementById("groupNameHeading");
 
-const socket = io("https://groupchat-3zrb.onrender.com");
+const socket = io();
 socket.on("data", (data) => {
   console.log(data);
 });
