@@ -4,7 +4,7 @@ const chatBoxBody = document.getElementById("chatBoxBody");
 const uiGroup = document.getElementById("groups");
 const groupNameHeading = document.getElementById("groupNameHeading");
 
-const socket = io("http://localhost:5000");
+const socket = io("https://groupchat-3zrb.onrender.com");
 socket.on("data", (data) => {
   console.log(data);
 });
@@ -49,7 +49,7 @@ async function messageSend() {
       return alert("Select group to send the message");
     }
     const res = await axios.post(
-      `http://localhost:4000/chat/sendMessage/`,
+      `https://groupchat-3zrb.onrender.com/chat/sendMessage/`,
       {
         message: message,
         groupName: groupName,

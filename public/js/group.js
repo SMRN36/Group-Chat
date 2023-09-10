@@ -21,7 +21,7 @@ async function createGroup() {
 
     const token = localStorage.getItem("token");
     const res = await axios.post(
-      "http://localhost:4000/group/createGroup",
+      "https://groupchat-3zrb.onrender.com/group/createGroup",
       {
         groupName: groupName,
         members: members,
@@ -38,7 +38,7 @@ async function createGroup() {
 async function getGroups() {
   try {
     const token = localStorage.getItem("token");
-    const res = await axios.get("http://localhost:4000/group/getGroups", {
+    const res = await axios.get("https://groupchat-3zrb.onrender.com/group/getGroups", {
       headers: { Authorization: token },
     });
     groups.innerHTML = "";
@@ -81,7 +81,7 @@ async function addToGroup() {
     }
     const token = localStorage.getItem("token");
     const res = await axios.post(
-      "http://localhost:4000/group/addToGroup",
+      "https://groupchat-3zrb.onrender.com/group/addToGroup",
       {
         groupName: groupName,
         members: members,
@@ -113,7 +113,7 @@ async function deleteFromGroup() {
       }
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:4000/group/deleteFromGroup",
+        "https://groupchat-3zrb.onrender.com/group/deleteFromGroup",
         {
           groupName: groupName,
           members: members,
@@ -144,7 +144,7 @@ async function deleteFromGroup() {
       }
       const token = localStorage.getItem("token");
       const res = await axios.get(
-        `http://localhost:4000/group/groupMembers/${groupName}`,
+        `https://groupchat-3zrb.onrender.com/group/groupMembers/${groupName}`,
         { headers: { Authorization: token } }
       );
       res.data.users.forEach((user) => {
@@ -167,7 +167,7 @@ async function deleteFromGroup() {
   
   function logout() {
     localStorage.clear();
-    window.location.href = "http://localhost:4000";
+    window.location.href = "https://groupchat-3zrb.onrender.com";
   }
 
 groupMembersBtn.addEventListener("click", groupMembers);

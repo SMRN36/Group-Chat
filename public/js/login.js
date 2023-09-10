@@ -19,7 +19,7 @@ function login() {
       loginEmail: loginEmail.value,
       loginPassword: loginPassword.value,
     };
-    axios.post("http://localhost:4000/user/login", loginDetails)
+    axios.post("https://groupchat-3zrb.onrender.com/user/login", loginDetails)
     .then((result) => {
       alert(result.data.message);
       localStorage.setItem("token", result.data.token);

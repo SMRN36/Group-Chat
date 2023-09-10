@@ -7,7 +7,7 @@ const Group = require("../Models/groupModel");
 
 const io = require("socket.io")(5000, {
   cors: {
-    origin: "http://localhost:4000",
+    origin: "https://groupchat-3zrb.onrender.com",
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
