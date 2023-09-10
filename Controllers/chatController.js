@@ -5,7 +5,7 @@ const sequelize = require("../Utils/database");
 const { Op } = require("sequelize");
 const Group = require("../Models/groupModel");
 
-const io = require("socket.io")(5000, {
+const io = require("socket.io")({
   cors: {
     origin: "https://groupchat-3zrb.onrender.com",
     methods: ["GET", "POST"],
